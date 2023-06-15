@@ -1,0 +1,141 @@
+body {
+  height: 100%;
+  font-family: Arial;
+  background: rgb(121, 128, 131);
+  padding: 30px;
+  color: #333;
+}
+.app {
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #29223b;
+  color: #fff;
+  padding: 20px 30px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  margin: 10px 0;
+}
+button {
+  background-color: #00d48d;
+  color: #fff;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  opacity: 0.8;
+}
+.comp-del {
+  display: flex;
+  gap: 10px;
+}
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  background-color: #110922;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.form-tarefa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-tarefa button {
+  font-weight: bold;
+  height: 29px;
+  width: 25%;
+}
+.delete {
+  background-color: #dc143c;
+}
+.completed {
+  opacity: 0.3;
+}
+.search {
+  align-items: flex-end;
+  display: flex;
+  gap: 5px;
+}
+.search input {
+  width: 100%;
+}
+.search svg {
+  margin-bottom: 8px;
+}
+.atalhos {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.filter-options {
+  display: flex;
+}
+.order-btn {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  outline: none;
+  padding: 6px 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 70%;
+}
+select {
+  outline: none;
+  padding: 5px;
+  margin: 0 20px 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+@media (max-width: 630px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  .atalhos {
+    flex-direction: column;
+  }
+  .todo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 430px) {
+  select,
+  input {
+    width: 100%;
+  }
+  .form-tarefa button {
+    width: 100%;
+  }
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .order-btn {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+}
